@@ -4,7 +4,7 @@
 // 8 -> 2, 4, 6, 8
 
 InputNum:
-Console.WriteLine("Введите число ,большее чем 2");
+Console.WriteLine("Введите число, большее чем 2");
 int num = Convert.ToInt32(Console.ReadLine());
 int start_num = 2;
 
@@ -20,5 +20,5 @@ while (start_num <= num)
 {
     Console.Write(start_num);
     Console.Write(" ");
-    start_num = start_num +2;
+    start_num = start_num + 2;
 }
