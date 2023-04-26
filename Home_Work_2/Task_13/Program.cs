@@ -5,18 +5,22 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-// Console.WriteLine("Введите число:");
-// int num = Convert.ToInt32(Console.ReadLine());
+IntNum:
+Console.WriteLine("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
 
-// if (num < -100 || num > 100)
-// {
-//     int num3 = (num / 100) % 10;
-//     Console.WriteLine($"Третья цифра числа {num}: {num3}");
-// }
-// else
-// {
-//     Console.WriteLine($"В числе {num} нет третьей цифры");
-// }
+if (num < 100) 
+{
+    Console.WriteLine("Нет третьей цифры, попробуйте ввести цисло снова");
+    goto IntNum;
+} 
+else 
+{
+    while (num > 999) 
+    {
+        num /= 10;
+    }
+}
 
-
-
+int num3 = num % 10;
+Console.WriteLine($"Третья цифра в числе: {num3}");
