@@ -53,4 +53,4 @@ double[] avg = CalculateColumnAverage(array);
 Console.WriteLine();
 Console.WriteLine("Средние арифметические по столбцам:");
 for (int j = 0; j < cols; j++)
-    Console.WriteLine($"Столбец {j + 1}: {avg[j]}");
+    Console.WriteLine($"Столбец {j + 1}: {avg[j]:F2}");
